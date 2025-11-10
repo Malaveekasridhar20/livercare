@@ -198,6 +198,227 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Comprehensive Liver Services */}
+      <section className="py-20 bg-muted">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-poppins font-bold text-foreground mb-4">
+              Comprehensive Liver Treatment Services at Best Hospital in Trichy
+            </h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
+              Liver Cure offers complete liver care services including expert treatment for all liver diseases, 
+              advanced liver transplant consultation, and specialized hepatology care in Trichy, Tamil Nadu.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="border-0 shadow-soft hover-lift transition-all">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-poppins font-semibold mb-3 text-primary">
+                  Hepatitis Treatment & Care
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  Expert treatment for Hepatitis A, B, C, and other viral hepatitis conditions. Our hepatologist 
+                  Dr. Kumaragurubaran provides comprehensive hepatitis care with latest antiviral therapies and 
+                  monitoring protocols for complete recovery.
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Hepatitis B & C treatment</li>
+                  <li>• Antiviral therapy management</li>
+                  <li>• Regular monitoring & follow-up</li>
+                  <li>• Prevention counseling</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-soft hover-lift transition-all">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-poppins font-semibold mb-3 text-primary">
+                  Liver Cirrhosis Management
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  Advanced treatment for liver cirrhosis including complications management, ascites treatment, 
+                  and liver transplant evaluation. Our expert care helps slow disease progression and improve 
+                  quality of life for cirrhosis patients.
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Cirrhosis staging & assessment</li>
+                  <li>• Ascites & edema management</li>
+                  <li>• Nutritional counseling</li>
+                  <li>• Transplant evaluation</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-soft hover-lift transition-all">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-poppins font-semibold mb-3 text-primary">
+                  Fatty Liver Disease Treatment
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  Comprehensive treatment for fatty liver disease (NAFLD/NASH) including lifestyle modification, 
+                  dietary counseling, and medical management. Early intervention helps prevent progression to 
+                  cirrhosis and liver failure.
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• NAFLD/NASH treatment</li>
+                  <li>• Weight management programs</li>
+                  <li>• Diabetes control</li>
+                  <li>• Regular liver monitoring</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-soft hover-lift transition-all">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-poppins font-semibold mb-3 text-primary">
+                  Liver Transplant Consultation
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  Expert liver transplant evaluation and consultation services. Dr. Kumaragurubaran provides 
+                  comprehensive assessment for liver transplant candidacy, pre-transplant care, and coordination 
+                  with leading transplant centers.
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Transplant evaluation</li>
+                  <li>• Pre-transplant optimization</li>
+                  <li>• Donor coordination</li>
+                  <li>• Post-transplant follow-up</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-soft hover-lift transition-all">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-poppins font-semibold mb-3 text-primary">
+                  Liver Cancer Treatment
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  Advanced treatment options for liver cancer including hepatocellular carcinoma (HCC). 
+                  Comprehensive cancer care with multidisciplinary approach, early detection protocols, 
+                  and coordination with oncology specialists.
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• HCC screening & diagnosis</li>
+                  <li>• Staging & treatment planning</li>
+                  <li>• Ablation therapy coordination</li>
+                  <li>• Palliative care support</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-soft hover-lift transition-all">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-poppins font-semibold mb-3 text-primary">
+                  Pediatric Liver Care
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  Specialized liver care for children including jaundice in newborns, pediatric hepatitis, 
+                  Wilson's disease, and other childhood liver conditions. Family-centered care with 
+                  age-appropriate treatment approaches.
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Neonatal jaundice treatment</li>
+                  <li>• Pediatric hepatitis care</li>
+                  <li>• Wilson's disease management</li>
+                  <li>• Growth & development monitoring</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Liver Cure - Detailed */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-poppins font-bold text-foreground mb-4">
+              Why Liver Cure is the Best Liver Hospital in Trichy
+            </h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
+              Liver Cure stands as the premier liver hospital in Trichy, offering world-class hepatology services 
+              with a patient-centered approach. Our commitment to excellence makes us the top choice for liver care in Tamil Nadu.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="text-2xl font-poppins font-semibold mb-6 text-primary">
+                Expert Hepatologist Dr. S. Kumaragurubaran
+              </h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                Dr. S. Kumaragurubaran brings extensive expertise in hepatology and liver transplant medicine to Trichy. 
+                With his MD, DM (Hepatology) qualifications and years of experience treating complex liver diseases, 
+                he provides personalized care for each patient. His expertise covers all aspects of liver diseases 
+                from simple fatty liver to complex liver transplant evaluations.
+              </p>
+              
+              <h3 className="text-2xl font-poppins font-semibold mb-6 text-primary">
+                Advanced Liver Treatment Facilities
+              </h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                Our hospital in Trichy is equipped with state-of-the-art diagnostic and treatment facilities for 
+                comprehensive liver care. From advanced imaging systems for accurate diagnosis to modern treatment 
+                protocols, we ensure every patient receives the highest standard of liver care available in Tamil Nadu.
+              </p>
+
+              <h3 className="text-2xl font-poppins font-semibold mb-6 text-primary">
+                Convenient Evening Consultations
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Understanding the busy schedules of our patients, Liver Cure offers convenient evening consultations 
+                from 5:30 PM to 8:30 PM, Monday through Saturday. This flexibility allows working professionals and 
+                families to access expert liver care without disrupting their daily routines. Book your appointment 
+                today by calling 95858 97676.
+              </p>
+            </div>
+
+            <div className="space-y-6">
+              <Card className="border-l-4 border-l-primary shadow-soft">
+                <CardContent className="p-6">
+                  <h4 className="font-poppins font-semibold text-lg mb-2">Comprehensive Liver Care</h4>
+                  <p className="text-muted-foreground">
+                    From routine liver function tests to complex liver transplant evaluations, we provide 
+                    complete liver care services under one roof at our Trichy hospital.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-l-4 border-l-primary shadow-soft">
+                <CardContent className="p-6">
+                  <h4 className="font-poppins font-semibold text-lg mb-2">Patient-Centered Approach</h4>
+                  <p className="text-muted-foreground">
+                    Every treatment plan is personalized based on individual patient needs, ensuring 
+                    optimal outcomes and improved quality of life for all liver disease patients.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-l-4 border-l-primary shadow-soft">
+                <CardContent className="p-6">
+                  <h4 className="font-poppins font-semibold text-lg mb-2">Latest Treatment Protocols</h4>
+                  <p className="text-muted-foreground">
+                    We follow international guidelines and latest evidence-based treatment protocols 
+                    to ensure our patients receive the most effective liver care available.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-l-4 border-l-primary shadow-soft">
+                <CardContent className="p-6">
+                  <h4 className="font-poppins font-semibold text-lg mb-2">Accessible Location in Trichy</h4>
+                  <p className="text-muted-foreground">
+                    Conveniently located in Thillainagar, Trichy, our hospital is easily accessible 
+                    from all parts of the city and surrounding areas in Tamil Nadu.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-hero">
         <div className="container mx-auto px-4 text-center">
