@@ -103,6 +103,48 @@ const Footer = () => {
             © {new Date().getFullYear()} Liver Cure. All rights reserved. | Dedicated to healing and hope.
           </p>
         </div>
+
+        {/* Developer Credit */}
+        <div className="mt-6 pt-6 border-t text-center">
+          <p className="text-xs text-muted-foreground mb-2">
+            Website developed by <span className="font-semibold text-primary">Malaveeka Sridhar</span>
+          </p>
+          <div className="flex justify-center items-center space-x-4 text-xs text-muted-foreground">
+            <a 
+              href="https://www.linkedin.com/in/malaveeka-sridhar-750b70252/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors"
+            >
+              LinkedIn
+            </a>
+            <span>•</span>
+            <a 
+              href="mailto:malaveekasridhar20072004@gmail.com" 
+              className="hover:text-primary transition-colors"
+            >
+              Email
+            </a>
+            <span>•</span>
+            <a 
+              href="https://www.instagram.com/malaveekasridhar?igsh=emM1MHNiOXF4dXhl" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors"
+            >
+              Instagram
+            </a>
+            <span>•</span>
+            <a 
+              href="https://malaveekasridhar.vercel.app/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors"
+            >
+              Portfolio
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   );
