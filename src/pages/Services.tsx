@@ -17,9 +17,11 @@ import {
   Syringe,
   Activity,
 } from "lucide-react";
+import AppointmentModal from "@/components/AppointmentModal";
 
 const Services = () => {
   const [selectedService, setSelectedService] = useState<number | null>(null);
+  const [showAppointmentModal, setShowAppointmentModal] = useState(false);
 
   const services = [
     {
@@ -169,8 +171,14 @@ const Services = () => {
                 </DialogDescription>
               </DialogHeader>
               <div className="mt-6">
-                <Button asChild className="bg-gradient-hero hover:opacity-90 w-full">
-                  <Link to="/contact">Book Consultation</Link>
+                <Button 
+                  onClick={() => {
+                    setSelectedService(null);
+                    setShowAppointmentModal(true);
+                  }}
+                  className="bg-gradient-hero hover:opacity-90 w-full"
+                >
+                  Book Consultation
                 </Button>
               </div>
             </>
@@ -187,11 +195,21 @@ const Services = () => {
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
             Our specialists are here to help you understand your condition and recommend the best treatment plan.
           </p>
-          <Button asChild size="lg" className="bg-gradient-hero hover:opacity-90">
-            <Link to="/contact">Schedule a Consultation</Link>
+          <Button 
+            onClick={() => setShowAppointmentModal(true)}
+            size="lg" 
+            className="bg-gradient-hero hover:opacity-90"
+          >
+            Schedule a Consultation
           </Button>
         </div>
       </section>
+
+      {/* Appointment Modal */}
+      <AppointmentModal 
+        isOpen={showAppointmentModal} 
+        onClose={() => setShowAppointmentModal(false)} 
+      />
     </div>
   );
 };

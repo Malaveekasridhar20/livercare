@@ -10,6 +10,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Calendar, Clock, User } from "lucide-react";
+import AppointmentModal from "@/components/AppointmentModal";
 
 interface BlogPost {
   id: number;
@@ -26,6 +27,7 @@ interface BlogPost {
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
+  const [showAppointmentModal, setShowAppointmentModal] = useState(false);
 
   const posts: BlogPost[] = [
     {
@@ -448,7 +450,7 @@ Most transplant recipients return to normal activities within 3-6 months. Your t
                       <Button 
                         onClick={() => {
                           setSelectedPost(null);
-                          window.location.href = '/contact';
+                          setShowAppointmentModal(true);
                         }}
                         className="bg-gradient-hero hover:opacity-90"
                       >
@@ -468,6 +470,12 @@ Most transplant recipients return to normal activities within 3-6 months. Your t
           )}
         </DialogContent>
       </Dialog>
+
+      {/* Appointment Modal */}
+      <AppointmentModal 
+        isOpen={showAppointmentModal} 
+        onClose={() => setShowAppointmentModal(false)} 
+      />
     </div>
   );
 };

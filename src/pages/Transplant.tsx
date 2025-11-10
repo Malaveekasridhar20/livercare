@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Accordion,
@@ -8,8 +9,10 @@ import {
 import { ClipboardCheck, Scissors, HeartPulse, Users, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import AppointmentModal from "@/components/AppointmentModal";
 
 const Transplant = () => {
+  const [showAppointmentModal, setShowAppointmentModal] = useState(false);
   const timeline = [
     {
       icon: ClipboardCheck,
@@ -216,14 +219,20 @@ const Transplant = () => {
             Our transplant coordinators are available to answer your questions and guide you through the process.
           </p>
           <Button
-            asChild
+            onClick={() => setShowAppointmentModal(true)}
             size="lg"
             className="bg-secondary hover:bg-secondary/90 text-secondary-foreground"
           >
-            <Link to="/contact">Contact Our Team</Link>
+            Contact Our Team
           </Button>
         </div>
       </section>
+
+      {/* Appointment Modal */}
+      <AppointmentModal 
+        isOpen={showAppointmentModal} 
+        onClose={() => setShowAppointmentModal(false)} 
+      />
     </div>
   );
 };
