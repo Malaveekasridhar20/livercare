@@ -66,10 +66,10 @@ const Home = () => {
               Liver Cure - Best Liver Hospital in Trichy
             </h1>
             <p className="text-2xl md:text-3xl mb-4 text-white italic">
-              #1 Liver Clinic | Top Liver Specialist | Expert Liver Treatment
+              Expert Liver Care & Treatment | Liver Transplant Services
             </p>
             <p className="text-lg md:text-xl mb-8 text-white/90">
-              🏥 Premier Liver Hospital & Clinic in Trichy | Expert Hepatologist Dr. S. Kumaragurubaran MD, DM | ✅ All Liver Diseases ✅ Liver Transplant ✅ Evening Consultations
+              🏥 Hospital in Trichy for all liver diseases | Expert liver care by Dr. S. Kumaragurubaran MD, DM | ✅ Liver Transplant ✅ Book Appointment ✅ Evening Consultations
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
@@ -97,10 +97,10 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="text-3xl md:text-4xl font-poppins font-bold text-foreground mb-4">
-              Why Choose Liver Cure - Best Liver Hospital in Trichy?
+              Expert Liver Care & Treatment - Hospital in Trichy
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Top-rated liver hospital in Trichy with expert hepatologist, advanced liver treatment facilities, and comprehensive liver care services for all liver diseases.
+              Best liver hospital in Trichy offering expert liver care, liver transplant services, and comprehensive treatment for all liver diseases. Book appointment today!
             </p>
           </div>
 
@@ -140,13 +140,13 @@ const Home = () => {
                 <CardContent className="lg:col-span-3 p-8 lg:p-12 flex flex-col justify-center">
                   <div className="mb-4">
                     <h2 className="text-3xl font-poppins font-bold text-foreground mb-2">
-                      Dr. S. Kumaragurubaran
+                      Dr. S. Kumaragurubaran - Expert Liver Care
                     </h2>
                     <p className="text-lg text-primary font-semibold mb-1">
                       MBBS, MD, DM (Hepatology), FPIC
                     </p>
                     <p className="text-muted-foreground">
-                      Consultant Hepatologist & Liver Transplant Physician
+                      Best Liver Transplant Specialist - Hospital in Trichy
                     </p>
                   </div>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -170,10 +170,10 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-poppins font-bold text-foreground mb-4">
-              Patient Success Stories
+              Liver Transplant & Treatment Success Stories
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Real stories from real patients who found hope and healing at Liver Cure.
+              Real stories from patients who received expert liver care and liver transplant services at our hospital in Trichy.
             </p>
           </div>
 
@@ -202,10 +202,10 @@ const Home = () => {
       <section className="py-20 bg-gradient-hero">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-poppins font-bold text-primary-foreground mb-6">
-            Ready to Start Your Healing Journey?
+            Book Appointment - Best Liver Care Treatment
           </h2>
           <p className="text-primary-foreground/90 text-lg mb-8 max-w-2xl mx-auto">
-            Our expert team is here to provide you with the care and support you deserve.
+            Expert liver care team at the best hospital in Trichy. All liver diseases treated with advanced liver transplant services.
           </p>
           <Button
             onClick={() => setShowAppointmentModal(true)}
