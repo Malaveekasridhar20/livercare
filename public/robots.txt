@@ -1,0 +1,38 @@
+# Liver Cure - Trichy Liver Specialist
+# https://livercure.com
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://livercure.com/sitemap.xml
+
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Social Media Bots
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Medical Search Engines
+User-agent: *
+Allow: /services
+Allow: /about
+Allow: /contact
+Allow: /blog
+Allow: /transplant
