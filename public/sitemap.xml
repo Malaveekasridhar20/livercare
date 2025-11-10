@@ -4,15 +4,19 @@
   
   <!-- Home Page -->
   <url>
-    <loc>https://livercure.com/</loc>
+    <loc>https://livercureclinic.com/</loc>
     <lastmod>2025-11-10</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://livercureclinic.com/liver-cure-logo.png</image:loc>
+      <image:title>Liver Cure - Best Liver Hospital Trichy</image:title>
+    </image:image>
   </url>
   
   <!-- About Page -->
   <url>
-    <loc>https://livercure.com/about</loc>
+    <loc>https://livercureclinic.com/about</loc>
     <lastmod>2025-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -20,7 +24,7 @@
   
   <!-- Services Page -->
   <url>
-    <loc>https://livercure.com/services</loc>
+    <loc>https://livercureclinic.com/services</loc>
     <lastmod>2025-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -28,7 +32,7 @@
   
   <!-- Transplant Page -->
   <url>
-    <loc>https://livercure.com/transplant</loc>
+    <loc>https://livercureclinic.com/transplant</loc>
     <lastmod>2025-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -36,7 +40,7 @@
   
   <!-- Blog Page -->
   <url>
-    <loc>https://livercure.com/blog</loc>
+    <loc>https://livercureclinic.com/blog</loc>
     <lastmod>2025-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -44,10 +48,48 @@
   
   <!-- Contact Page -->
   <url>
-    <loc>https://livercure.com/contact</loc>
+    <loc>https://livercureclinic.com/contact</loc>
     <lastmod>2025-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  
+  <!-- Individual Blog Articles for Better SEO -->
+  <url>
+    <loc>https://livercureclinic.com/blog/understanding-fatty-liver-disease</loc>
+    <lastmod>2025-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://livercureclinic.com/blog/hepatitis-b-prevention-treatment</loc>
+    <lastmod>2025-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://livercureclinic.com/blog/liver-cirrhosis-causes-symptoms</loc>
+    <lastmod>2025-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://livercureclinic.com/blog/liver-transplant-when-needed</loc>
+    <lastmod>2025-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://livercureclinic.com/blog/jaundice-newborns-adults</loc>
+    <lastmod>2025-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://livercureclinic.com/blog/liver-health-diet-lifestyle</loc>
+    <lastmod>2025-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   
 </urlset>

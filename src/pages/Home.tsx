@@ -63,13 +63,13 @@ const Home = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-2xl text-white animate-fade-in-up">
             <h1 className="text-4xl md:text-6xl font-poppins font-bold mb-6 leading-tight">
-              Liver Cure
+              Liver Cure - Best Liver Hospital in Trichy
             </h1>
             <p className="text-2xl md:text-3xl mb-4 text-white italic">
-              Heal the liver, restore life!
+              #1 Liver Clinic | Top Liver Specialist | Expert Liver Treatment
             </p>
             <p className="text-lg md:text-xl mb-8 text-white/90">
-              Specialised Liver Clinic - Expert care by Dr. S. Kumaragurubaran, MD., DM (Hepatology), Consultant Hepatologist & Liver Transplant Physician
+              🏥 Premier Liver Hospital & Clinic in Trichy | Expert Hepatologist Dr. S. Kumaragurubaran MD, DM | ✅ All Liver Diseases ✅ Liver Transplant ✅ Evening Consultations
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
@@ -97,10 +97,10 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="text-3xl md:text-4xl font-poppins font-bold text-foreground mb-4">
-              Why Choose Liver Cure?
+              Why Choose Liver Cure - Best Liver Hospital in Trichy?
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              We combine cutting-edge medical technology with compassionate care to deliver exceptional outcomes.
+              Top-rated liver hospital in Trichy with expert hepatologist, advanced liver treatment facilities, and comprehensive liver care services for all liver diseases.
             </p>
           </div>
 

@@ -1,13 +1,18 @@
-# Liver Cure - Trichy Liver Specialist
-# https://livercure.com
+# Liver Cure - Best Liver Hospital & Clinic in Trichy
+# Top Liver Specialist Dr. S. Kumaragurubaran MD, DM (Hepatology)
+# https://livercureclinic.com
 
 User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /api/
+Disallow: /private/
 
 # Sitemap
-Sitemap: https://livercure.com/sitemap.xml
+Sitemap: https://livercureclinic.com/sitemap.xml
+
+# Host
+Host: https://livercureclinic.com
 
 # Google
 User-agent: Googlebot
