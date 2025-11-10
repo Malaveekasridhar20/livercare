@@ -419,6 +419,134 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Frequently Asked Questions */}
+      <section className="py-20 bg-muted">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-poppins font-bold text-foreground mb-4">
+              Frequently Asked Questions - Liver Care in Trichy
+            </h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
+              Get answers to common questions about liver diseases, treatments, and our services at 
+              the best liver hospital in Trichy. Expert answers from Dr. S. Kumaragurubaran.
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto space-y-6">
+            <Card className="border-0 shadow-soft">
+              <CardContent className="p-8">
+                <h3 className="text-xl font-poppins font-semibold mb-4 text-primary">
+                  Who is the best liver specialist in Trichy?
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Dr. S. Kumaragurubaran MD, DM (Hepatology) is the leading liver specialist in Trichy at Liver Cure hospital. 
+                  He is a consultant hepatologist and liver transplant physician with extensive experience in treating all liver diseases. 
+                  His expertise includes hepatitis treatment, cirrhosis management, fatty liver care, and liver transplant consultation.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-soft">
+              <CardContent className="p-8">
+                <h3 className="text-xl font-poppins font-semibold mb-4 text-primary">
+                  What liver diseases are treated at Liver Cure?
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Liver Cure treats all liver diseases including Hepatitis A, B, C, liver cirrhosis, fatty liver disease, 
+                  liver cancer, jaundice, autoimmune hepatitis, Wilson's disease, and provides liver transplant consultation. 
+                  We offer comprehensive liver care for both adults and children with specialized pediatric liver services.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-soft">
+              <CardContent className="p-8">
+                <h3 className="text-xl font-poppins font-semibold mb-4 text-primary">
+                  Where is Liver Cure hospital located in Trichy?
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Liver Cure is conveniently located at No. D-116, 9th Cross West, Thillainagar West, Tiruchirappalli, 
+                  Tamil Nadu 620018. We are easily accessible from all parts of Trichy and surrounding areas. 
+                  The hospital is well-connected by public transport and has ample parking facilities for patients.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-soft">
+              <CardContent className="p-8">
+                <h3 className="text-xl font-poppins font-semibold mb-4 text-primary">
+                  What are the consultation timings at Liver Cure?
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Liver Cure offers convenient evening consultations from 5:30 PM to 8:30 PM, Monday to Saturday. 
+                  This timing is designed to accommodate working professionals and families. For appointments, 
+                  call +91-95858-97676 or book online through our website. Emergency consultations are also available.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-soft">
+              <CardContent className="p-8">
+                <h3 className="text-xl font-poppins font-semibold mb-4 text-primary">
+                  Does Liver Cure provide liver transplant services?
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Yes, Liver Cure provides comprehensive liver transplant consultation and evaluation services. 
+                  Dr. Kumaragurubaran assesses patients for liver transplant candidacy, provides pre-transplant optimization, 
+                  coordinates with leading transplant centers, and offers post-transplant follow-up care. We guide patients 
+                  through the entire liver transplant process.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-soft">
+              <CardContent className="p-8">
+                <h3 className="text-xl font-poppins font-semibold mb-4 text-primary">
+                  How to book an appointment at Liver Cure?
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Booking an appointment at Liver Cure is easy. You can call us directly at +91-95858-97676, 
+                  use our online appointment booking system on this website, or visit our hospital in Thillainagar, Trichy. 
+                  We also offer WhatsApp booking for your convenience. Same-day appointments are available based on availability.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Emergency Contact Information */}
+      <section className="py-16 bg-primary">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-2xl md:text-3xl font-poppins font-bold text-primary-foreground mb-4">
+            Emergency Liver Care - Available 24/7
+          </h2>
+          <p className="text-primary-foreground/90 text-lg mb-6 max-w-2xl mx-auto">
+            For liver-related emergencies, contact Liver Cure immediately. Our expert team provides 
+            urgent liver care and emergency consultation services in Trichy.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button
+              asChild
+              size="lg"
+              className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold"
+            >
+              <a href="tel:+919585897676">Call Emergency: 95858 97676</a>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="bg-white/10 backdrop-blur-sm border-white text-white hover:bg-white hover:text-primary"
+            >
+              <a href="https://wa.me/919585897676" target="_blank" rel="noopener noreferrer">
+                WhatsApp Emergency
+              </a>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-hero">
         <div className="container mx-auto px-4 text-center">

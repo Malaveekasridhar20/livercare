@@ -1,0 +1,34 @@
+# Liver Cure - Best Liver Hospital in Trichy
+# Medical Clinic Information
+
+Name: Liver Cure
+Type: Medical Clinic - Hepatology
+Specialty: Liver Diseases Treatment
+Doctor: Dr. S. Kumaragurubaran MD, DM (Hepatology)
+Location: Trichy, Tamil Nadu, India
+Address: No. D-116, 9th Cross West, Thillainagar West, Tiruchirappalli 620018
+Phone: +91-95858-97676
+Email: livercare.trichy@gmail.com
+Website: https://livercureclinic.com
+
+Services:
+- Hepatitis Treatment (A, B, C)
+- Liver Cirrhosis Management
+- Fatty Liver Disease Treatment
+- Liver Cancer Treatment
+- Liver Transplant Consultation
+- Pediatric Liver Care
+- Jaundice Treatment
+- Autoimmune Hepatitis Treatment
+- Wilson's Disease Management
+
+Consultation Hours:
+Monday to Saturday: 5:30 PM - 8:30 PM
+Sunday: Closed
+
+Languages: English, Tamil
+Insurance: Accepted
+Emergency: Available
+Parking: Available
+
+Keywords: liver hospital trichy, liver specialist trichy, hepatologist trichy, liver treatment trichy, liver transplant trichy, best liver doctor trichy, liver clinic trichy
