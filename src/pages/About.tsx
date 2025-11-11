@@ -18,6 +18,10 @@ const About = () => {
             src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1920&h=800&fit=crop"
             alt="Modern hospital and medical facility"
             className="w-full h-full object-cover"
+            width="1920"
+            height="500"
+            loading="lazy"
+            decoding="async"
           />
           <div className="absolute inset-0 bg-primary/85"></div>
         </div>
@@ -84,6 +88,10 @@ const About = () => {
                     src="/doctor-kumaragurubaran.jpg"
                     alt="Dr. S. Kumaragurubaran"
                     className="w-full h-full object-cover"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
                 </div>

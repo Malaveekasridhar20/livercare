@@ -187,6 +187,8 @@ const Home = () => {
             src={heroImage}
             alt="Best Liver Hospital in Trichy - Liver Cure Clinic with Dr. Kumaragurubaran"
             className="w-full h-full object-cover"
+            width="1920"
+            height="700"
             fetchpriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/60"></div>
@@ -271,6 +273,8 @@ const Home = () => {
                     src={service.image} 
                     alt={`${service.title} - Liver Cure Clinic Trichy`}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    width="400"
+                    height="250"
                     loading="lazy"
                     decoding="async"
                   />
@@ -337,6 +341,8 @@ const Home = () => {
                     src="/doctor-kumaragurubaran.jpg"
                     alt="Dr. S. Kumaragurubaran MD DM - Best Liver Specialist in Trichy"
                     className="w-full h-full object-cover"
+                    width="600"
+                    height="400"
                     loading="lazy"
                     decoding="async"
                   />
