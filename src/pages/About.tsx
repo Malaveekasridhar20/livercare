@@ -1,9 +1,16 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, Eye, Microscope, Award, GraduationCap, Languages, Heart } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const About = () => {
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="About Dr. Kumaragurubaran MD DM | Best Liver Specialist in Trichy | Liver Cure Clinic"
+        description="Meet Dr. S. Kumaragurubaran MD, DM - Best Liver Specialist & Hepatologist in Trichy. Expert in liver diseases, transplant consultation. 15+ years experience at Liver Cure Clinic."
+        keywords="Dr Kumaragurubaran, liver specialist trichy, hepatologist trichy, best liver doctor trichy, liver cure clinic, liver expert trichy, MD DM hepatology, liver transplant specialist trichy, experienced liver doctor, qualified hepatologist trichy"
+        canonical="https://livercureclinic.com/about"
+      />
       {/* Hero Section */}
       <section className="relative h-[400px] md:h-[500px] flex items-center text-primary-foreground overflow-hidden">
         <div className="absolute inset-0">

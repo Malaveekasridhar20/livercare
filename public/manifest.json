@@ -1,0 +1,29 @@
+{
+  "name": "Liver Cure Clinic - Best Liver Hospital in Trichy",
+  "short_name": "Liver Cure",
+  "description": "Best Liver Hospital in Trichy. Expert treatment for all liver diseases by Dr. Kumaragurubaran MD, DM. Evening consultations 5:30-8:30 PM.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#8B4513",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/liver-cure-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/liver-cure-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["health", "medical"],
+  "lang": "en-IN",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false
+}

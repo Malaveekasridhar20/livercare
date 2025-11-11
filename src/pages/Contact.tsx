@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { MapPin, Phone, Mail, Clock, CheckCircle } from "lucide-react";
 import { useState } from "react";
+import SEO from "@/components/SEO";
 
 const Contact = () => {
   const [showSuccess, setShowSuccess] = useState(false);
@@ -60,6 +61,12 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Contact Liver Cure Clinic Trichy | Book Appointment | Call: 95858 97676"
+        description="Contact Liver Cure Clinic in Trichy. Book appointment with Dr. Kumaragurubaran. Address: D-116, Thillainagar West, Trichy. Evening consultations 5:30-8:30 PM. Call: 95858 97676"
+        keywords="liver cure contact, liver clinic trichy contact, book appointment liver cure, liver doctor trichy contact, liver cure phone number, liver cure address, liver cure location, thillainagar liver clinic, liver cure trichy address, liver hospital trichy contact"
+        canonical="https://livercureclinic.com/contact"
+      />
       {/* Hero Section */}
       <section className="relative h-[400px] md:h-[500px] flex items-center text-primary-foreground overflow-hidden">
         <div className="absolute inset-0">

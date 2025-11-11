@@ -18,6 +18,7 @@ import {
   Activity,
 } from "lucide-react";
 import AppointmentModal from "@/components/AppointmentModal";
+import SEO from "@/components/SEO";
 
 const Services = () => {
   const [selectedService, setSelectedService] = useState<number | null>(null);
@@ -105,6 +106,12 @@ const Services = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Liver Treatment Services in Trichy | Hepatitis, Cirrhosis, Fatty Liver | Liver Cure"
+        description="Comprehensive liver treatment services in Trichy: Hepatitis B & C, Cirrhosis, Fatty Liver, Jaundice, Liver Cancer, Autoimmune Hepatitis. Expert care by Dr. Kumaragurubaran. Call: 95858 97676"
+        keywords="liver treatment trichy, hepatitis treatment trichy, cirrhosis treatment trichy, fatty liver treatment trichy, jaundice treatment trichy, liver cancer treatment trichy, autoimmune hepatitis trichy, wilson disease treatment, liver services trichy, hepatology services trichy"
+        canonical="https://livercureclinic.com/services"
+      />
       {/* Hero Section */}
       <section className="relative h-[400px] md:h-[500px] flex items-center text-primary-foreground overflow-hidden">
         <div className="absolute inset-0">

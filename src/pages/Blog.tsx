@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/dialog";
 import { Calendar, Clock, User } from "lucide-react";
 import AppointmentModal from "@/components/AppointmentModal";
+import SEO from "@/components/SEO";
 
 interface BlogPost {
   id: number;
@@ -295,6 +296,12 @@ Most transplant recipients return to normal activities within 3-6 months. Your t
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Liver Health Blog | Expert Articles & Tips | Liver Cure Clinic Trichy"
+        description="Read expert articles on liver health, hepatitis, cirrhosis, fatty liver disease, and liver care tips by Dr. Kumaragurubaran. Stay informed about liver wellness and treatment options."
+        keywords="liver health blog, liver care tips, hepatitis information, cirrhosis articles, fatty liver blog, liver disease prevention, liver health tips trichy, liver wellness, hepatology blog, liver care articles"
+        canonical="https://livercureclinic.com/blog"
+      />
       {/* Hero Section */}
       <section className="relative h-[400px] md:h-[500px] flex items-center text-primary-foreground overflow-hidden">
         <div className="absolute inset-0">

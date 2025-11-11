@@ -10,6 +10,7 @@ import { ClipboardCheck, Scissors, HeartPulse, Users, Star } from "lucide-react"
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import AppointmentModal from "@/components/AppointmentModal";
+import SEO from "@/components/SEO";
 
 const Transplant = () => {
   const [showAppointmentModal, setShowAppointmentModal] = useState(false);
@@ -83,6 +84,12 @@ const Transplant = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Liver Transplant Consultation in Trichy | Expert Guidance | Liver Cure Clinic"
+        description="Expert liver transplant consultation in Trichy by Dr. Kumaragurubaran MD, DM. Comprehensive evaluation, pre & post-transplant care. 100+ successful transplant consultations. Call: 95858 97676"
+        keywords="liver transplant trichy, liver transplant consultation trichy, liver transplant doctor trichy, liver transplant specialist trichy, liver transplant evaluation trichy, pre transplant care trichy, post transplant care trichy, liver transplant surgeon trichy, best liver transplant doctor trichy"
+        canonical="https://livercureclinic.com/transplant"
+      />
       {/* Hero Section */}
       <section className="relative h-[400px] md:h-[500px] flex items-center text-primary-foreground overflow-hidden">
         <div className="absolute inset-0">
