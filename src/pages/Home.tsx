@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield, Clock, Award, ChevronRight, Star, Heart, Users, Stethoscope, Phone, MapPin, Mail, CheckCircle, ArrowRight } from "lucide-react";
+import { Shield, Clock, Award, ChevronRight, Star } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
 import AppointmentModal from "@/components/AppointmentModal";
 
@@ -10,56 +10,20 @@ const Home = () => {
   const [showAppointmentModal, setShowAppointmentModal] = useState(false);
   const benefits = [
     {
-      icon: Stethoscope,
-      title: "Expert Hepatologist",
-      description: "Dr. S. Kumaragurubaran MD, DM - Leading liver specialist in Trichy with extensive experience.",
-      color: "bg-blue-50 text-blue-600"
+      icon: Shield,
+      title: "Expert Specialists",
+      description: "Board-certified hepatologists with decades of combined experience in liver care.",
     },
     {
-      icon: Heart,
-      title: "Comprehensive Care",
-      description: "Complete liver treatment from diagnosis to recovery with personalized care plans.",
-      color: "bg-red-50 text-red-600"
+      icon: Award,
+      title: "Advanced Facilities",
+      description: "State-of-the-art diagnostic and surgical equipment for precise treatment.",
     },
     {
-      icon: Users,
-      title: "Patient-Centered",
-      description: "Evening consultations and flexible scheduling designed around your needs.",
-      color: "bg-green-50 text-green-600"
+      icon: Clock,
+      title: "24×7 Care",
+      description: "Round-the-clock emergency services and dedicated patient support.",
     },
-  ];
-
-  const services = [
-    {
-      title: "Hepatitis Treatment",
-      description: "Expert care for Hepatitis A, B, C with latest antiviral therapies and monitoring.",
-      features: ["Antiviral therapy", "Regular monitoring", "Prevention counseling"]
-    },
-    {
-      title: "Liver Cirrhosis Care",
-      description: "Advanced management of cirrhosis complications and transplant evaluation.",
-      features: ["Ascites treatment", "Nutritional support", "Transplant evaluation"]
-    },
-    {
-      title: "Fatty Liver Treatment",
-      description: "Comprehensive NAFLD/NASH treatment with lifestyle and medical management.",
-      features: ["Weight management", "Diabetes control", "Liver monitoring"]
-    },
-    {
-      title: "Liver Transplant Consultation",
-      description: "Complete transplant evaluation and coordination with leading centers.",
-      features: ["Pre-transplant care", "Donor coordination", "Post-transplant follow-up"]
-    },
-    {
-      title: "Liver Cancer Treatment",
-      description: "Multidisciplinary approach to liver cancer with early detection protocols.",
-      features: ["HCC screening", "Treatment planning", "Oncology coordination"]
-    },
-    {
-      title: "Pediatric Liver Care",
-      description: "Specialized liver care for children with family-centered approach.",
-      features: ["Neonatal jaundice", "Pediatric hepatitis", "Growth monitoring"]
-    }
   ];
 
   const testimonials = [
@@ -84,369 +48,521 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
-      {/* Hero Section - Clean & Modern */}
-      <section className="relative min-h-[80vh] flex items-center bg-gradient-to-br from-blue-50 via-white to-green-50">
-        <div className="container mx-auto px-4 py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Content */}
-            <div className="space-y-8">
-              <div className="space-y-4">
-                <div className="inline-flex items-center px-4 py-2 bg-primary/10 rounded-full text-primary font-medium text-sm">
-                  🏥 Best Liver Hospital in Trichy
-                </div>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                  <span className="text-primary">Liver Cure</span>
-                  <br />
-                  Expert Liver Care
-                </h1>
-                <p className="text-xl text-gray-600 leading-relaxed">
-                  Premier liver hospital in Trichy offering comprehensive liver treatment, 
-                  liver transplant services, and expert hepatology care by Dr. S. Kumaragurubaran MD, DM.
-                </p>
-              </div>
-
-              {/* Quick Info */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <div className="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-sm border">
-                  <Clock className="h-5 w-5 text-primary" />
-                  <div>
-                    <p className="font-medium text-gray-900">Evening Hours</p>
-                    <p className="text-sm text-gray-600">5:30 PM - 8:30 PM</p>
-                  </div>
-                </div>
-                <div className="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-sm border">
-                  <Phone className="h-5 w-5 text-primary" />
-                  <div>
-                    <p className="font-medium text-gray-900">Call Now</p>
-                    <p className="text-sm text-gray-600">95858 97676</p>
-                  </div>
-                </div>
-                <div className="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-sm border">
-                  <MapPin className="h-5 w-5 text-primary" />
-                  <div>
-                    <p className="font-medium text-gray-900">Location</p>
-                    <p className="text-sm text-gray-600">Thillainagar, Trichy</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button
-                  onClick={() => setShowAppointmentModal(true)}
-                  size="lg"
-                  className="bg-primary hover:bg-primary/90 text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all"
-                >
-                  Book Appointment
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-                <Button
-                  asChild
-                  size="lg"
-                  variant="outline"
-                  className="border-2 border-primary text-primary hover:bg-primary hover:text-white font-semibold px-8 py-4 rounded-lg transition-all"
-                >
-                  <a href="tel:+919585897676">Call Now</a>
-                </Button>
-              </div>
-            </div>
-
-            {/* Image */}
-            <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <img
-                  src={heroImage}
-                  alt="Dr. S. Kumaragurubaran - Best Liver Specialist in Trichy"
-                  className="w-full h-[500px] object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
-              </div>
-              {/* Floating Card */}
-              <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl border">
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                    <Stethoscope className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-gray-900">Dr. S. Kumaragurubaran</p>
-                    <p className="text-sm text-gray-600">MD, DM (Hepatology)</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="relative h-[600px] md:h-[700px] flex items-center">
+        <div className="absolute inset-0">
+          <img
+            src={heroImage}
+            alt="Doctor and patient smiling in modern hospital"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/60"></div>
         </div>
-      </section>
 
-      {/* Why Choose Us - Clean Design */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Why Choose Liver Cure?
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Experience world-class liver care at Trichy's premier hepatology center
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-2xl text-white animate-fade-in-up">
+            <h1 className="text-4xl md:text-6xl font-poppins font-bold mb-6 leading-tight">
+              Liver Cure - Best Liver Hospital in Trichy
+            </h1>
+            <p className="text-2xl md:text-3xl mb-4 text-white italic">
+              Expert Liver Care & Treatment | Liver Transplant Services
             </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {benefits.map((benefit, index) => (
-              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-white">
-                <CardContent className="p-8 text-center">
-                  <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl mb-6 ${benefit.color}`}>
-                    <benefit.icon className="h-8 w-8" />
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">{benefit.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Doctor Section - Clean Profile */}
-      <section className="py-20 bg-gradient-to-br from-primary/5 to-blue-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <Card className="border-0 shadow-xl overflow-hidden bg-white">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
-                <div className="relative h-[400px] lg:h-auto overflow-hidden">
-                  <img
-                    src="/doctor-kumaragurubaran.jpg"
-                    alt="Dr. S. Kumaragurubaran - Best Liver Specialist in Trichy"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent"></div>
-                </div>
-                <CardContent className="p-8 lg:p-12 flex flex-col justify-center">
-                  <div className="space-y-6">
-                    <div>
-                      <div className="inline-flex items-center px-3 py-1 bg-primary/10 rounded-full text-primary font-medium text-sm mb-4">
-                        Leading Hepatologist in Trichy
-                      </div>
-                      <h2 className="text-3xl font-bold text-gray-900 mb-2">
-                        Dr. S. Kumaragurubaran
-                      </h2>
-                      <p className="text-lg text-primary font-semibold mb-2">
-                        MD, DM (Hepatology), FPIC
-                      </p>
-                      <p className="text-gray-600">
-                        Consultant Hepatologist & Liver Transplant Physician
-                      </p>
-                    </div>
-                    
-                    <p className="text-gray-600 leading-relaxed">
-                      With extensive expertise in hepatology and liver transplant medicine, Dr. Kumaragurubaran 
-                      provides personalized care for all liver conditions. His patient-centered approach and 
-                      commitment to excellence make him the trusted choice for liver care in Trichy.
-                    </p>
-
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="text-center p-4 bg-gray-50 rounded-lg">
-                        <p className="text-2xl font-bold text-primary">15+</p>
-                        <p className="text-sm text-gray-600">Years Experience</p>
-                      </div>
-                      <div className="text-center p-4 bg-gray-50 rounded-lg">
-                        <p className="text-2xl font-bold text-primary">1000+</p>
-                        <p className="text-sm text-gray-600">Patients Treated</p>
-                      </div>
-                    </div>
-
-                    <Button asChild className="bg-primary hover:bg-primary/90 text-white w-fit">
-                      <Link to="/about">Learn More About Dr. Kumaragurubaran</Link>
-                    </Button>
-                  </div>
-                </CardContent>
-              </div>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials - Clean Cards */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Patient Success Stories
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Real experiences from patients who found healing at Liver Cure
+            <p className="text-lg md:text-xl mb-8 text-white/90">
+              🏥 Hospital in Trichy for all liver diseases | Expert liver care by Dr. S. Kumaragurubaran MD, DM | ✅ Liver Transplant ✅ Book Appointment ✅ Evening Consultations
             </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-white">
-                <CardContent className="p-8">
-                  <div className="flex mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                  <blockquote className="text-gray-700 mb-6 italic leading-relaxed">
-                    "{testimonial.quote}"
-                  </blockquote>
-                  <div className="border-t pt-4">
-                    <p className="font-bold text-gray-900">{testimonial.name}</p>
-                    <p className="text-sm text-gray-600">{testimonial.condition}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Services Section - Modern Grid */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Comprehensive Liver Treatment Services
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Expert liver care for all conditions at Trichy's leading hepatology center
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <Card key={index} className="border border-gray-200 hover:border-primary/50 hover:shadow-lg transition-all duration-300 bg-white">
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
-                    {service.title}
-                  </h3>
-                  <p className="text-gray-600 mb-4 leading-relaxed">
-                    {service.description}
-                  </p>
-                  <div className="space-y-2">
-                    {service.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-center space-x-2">
-                        <CheckCircle className="h-4 w-4 text-green-500 flex-shrink-0" />
-                        <span className="text-sm text-gray-600">{feature}</span>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section - Clean & Organized */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Get expert answers about liver care and treatment from Dr. S. Kumaragurubaran
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300">
-              <CardContent className="p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-3">
-                  Who is the best liver specialist in Trichy?
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Dr. S. Kumaragurubaran MD, DM (Hepatology) is the leading liver specialist in Trichy, 
-                  providing expert care for all liver diseases with years of experience.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300">
-              <CardContent className="p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-3">
-                  What are the consultation timings?
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Evening consultations from 5:30 PM to 8:30 PM, Monday to Saturday. 
-                  Call +91-95858-97676 to book your appointment.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300">
-              <CardContent className="p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-3">
-                  Where is Liver Cure located?
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Located at Thillainagar West, Trichy - easily accessible from all parts of the city 
-                  with ample parking facilities.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300">
-              <CardContent className="p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-3">
-                  Do you provide liver transplant services?
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Yes, we provide comprehensive liver transplant consultation, evaluation, 
-                  and coordination with leading transplant centers.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section - Clean & Simple */}
-      <section className="py-20 bg-gradient-to-br from-primary to-primary/80">
-        <div className="container mx-auto px-4 text-center">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Ready to Start Your Healing Journey?
-            </h2>
-            <p className="text-white/90 text-xl mb-8 leading-relaxed">
-              Book your consultation with Dr. S. Kumaragurubaran and experience expert liver care at Trichy's premier hepatology center.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 onClick={() => setShowAppointmentModal(true)}
                 size="lg"
-                className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg shadow-lg"
+                className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold"
               >
-                Book Appointment Now
-                <ArrowRight className="ml-2 h-5 w-5" />
+                Book Appointment
               </Button>
               <Button
                 asChild
                 size="lg"
                 variant="outline"
-                className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold px-8 py-4 rounded-lg"
+                className="bg-white/10 backdrop-blur-sm border-white text-white hover:bg-white hover:text-primary"
               >
-                <a href="tel:+919585897676">Call: 95858 97676</a>
+                <Link to="/contact">Contact Us</Link>
               </Button>
             </div>
-            
-            {/* Quick Contact Info */}
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="flex items-center justify-center space-x-3 text-white/90">
-                <Clock className="h-5 w-5" />
-                <span>Evening: 5:30 PM - 8:30 PM</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-20 bg-gradient-soft">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16 animate-fade-in-up">
+            <h2 className="text-3xl md:text-4xl font-poppins font-bold text-foreground mb-4">
+              Expert Liver Care & Treatment - Hospital in Trichy
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Best liver hospital in Trichy offering expert liver care, liver transplant services, and comprehensive treatment for all liver diseases. Book appointment today!
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {benefits.map((benefit, index) => (
+              <Card
+                key={index}
+                className="border-0 shadow-soft hover-lift hover:shadow-medium transition-all"
+              >
+                <CardContent className="p-8 text-center">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-light rounded-full mb-6">
+                    <benefit.icon className="h-8 w-8 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-poppins font-semibold mb-3">{benefit.title}</h3>
+                  <p className="text-muted-foreground">{benefit.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Doctor Section */}
+      <section className="py-20 bg-muted">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <Card className="border-0 shadow-medium overflow-hidden">
+              <div className="grid grid-cols-1 lg:grid-cols-5">
+                <div className="lg:col-span-2 relative h-[300px] lg:h-auto overflow-hidden">
+                  <img
+                    src="/doctor-kumaragurubaran.jpg"
+                    alt="Dr. S. Kumaragurubaran"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent to-primary/20"></div>
+                </div>
+                <CardContent className="lg:col-span-3 p-8 lg:p-12 flex flex-col justify-center">
+                  <div className="mb-4">
+                    <h2 className="text-3xl font-poppins font-bold text-foreground mb-2">
+                      Dr. S. Kumaragurubaran - Expert Liver Care
+                    </h2>
+                    <p className="text-lg text-primary font-semibold mb-1">
+                      MBBS, MD, DM (Hepatology), FPIC
+                    </p>
+                    <p className="text-muted-foreground">
+                      Best Liver Transplant Specialist - Hospital in Trichy
+                    </p>
+                  </div>
+                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                    A dedicated specialist committed to providing compassionate, patient-centric care 
+                    with expertise in diagnosing and treating all liver-related conditions. With comprehensive 
+                    training and a focus on the latest medical advancements, Dr. Kumaragurubaran ensures 
+                    personalized treatment for every patient.
+                  </p>
+                  <Button asChild className="bg-gradient-hero hover:opacity-90 w-fit">
+                    <Link to="/about">Learn More About Our Expert</Link>
+                  </Button>
+                </CardContent>
               </div>
-              <div className="flex items-center justify-center space-x-3 text-white/90">
-                <MapPin className="h-5 w-5" />
-                <span>Thillainagar, Trichy</span>
-              </div>
-              <div className="flex items-center justify-center space-x-3 text-white/90">
-                <Mail className="h-5 w-5" />
-                <span>livercare.trichy@gmail.com</span>
-              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-poppins font-bold text-foreground mb-4">
+              Liver Transplant & Treatment Success Stories
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Real stories from patients who received expert liver care and liver transplant services at our hospital in Trichy.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className="border-0 shadow-soft hover-lift transition-all">
+                <CardContent className="p-8">
+                  <div className="flex mb-4">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="h-5 w-5 fill-secondary text-secondary" />
+                    ))}
+                  </div>
+                  <p className="text-foreground mb-6 italic">"{testimonial.quote}"</p>
+                  <div>
+                    <p className="font-poppins font-semibold text-foreground">{testimonial.name}</p>
+                    <p className="text-sm text-muted-foreground">{testimonial.condition}</p>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Comprehensive Liver Services */}
+      <section className="py-20 bg-muted">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-poppins font-bold text-foreground mb-4">
+              Comprehensive Liver Treatment Services at Best Hospital in Trichy
+            </h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
+              Liver Cure offers complete liver care services including expert treatment for all liver diseases, 
+              advanced liver transplant consultation, and specialized hepatology care in Trichy, Tamil Nadu.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="border-0 shadow-soft hover-lift transition-all">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-poppins font-semibold mb-3 text-primary">
+                  Hepatitis Treatment & Care
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  Expert treatment for Hepatitis A, B, C, and other viral hepatitis conditions. Our hepatologist 
+                  Dr. Kumaragurubaran provides comprehensive hepatitis care with latest antiviral therapies and 
+                  monitoring protocols for complete recovery.
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Hepatitis B & C treatment</li>
+                  <li>• Antiviral therapy management</li>
+                  <li>• Regular monitoring & follow-up</li>
+                  <li>• Prevention counseling</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-soft hover-lift transition-all">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-poppins font-semibold mb-3 text-primary">
+                  Liver Cirrhosis Management
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  Advanced treatment for liver cirrhosis including complications management, ascites treatment, 
+                  and liver transplant evaluation. Our expert care helps slow disease progression and improve 
+                  quality of life for cirrhosis patients.
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Cirrhosis staging & assessment</li>
+                  <li>• Ascites & edema management</li>
+                  <li>• Nutritional counseling</li>
+                  <li>• Transplant evaluation</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-soft hover-lift transition-all">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-poppins font-semibold mb-3 text-primary">
+                  Fatty Liver Disease Treatment
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  Comprehensive treatment for fatty liver disease (NAFLD/NASH) including lifestyle modification, 
+                  dietary counseling, and medical management. Early intervention helps prevent progression to 
+                  cirrhosis and liver failure.
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• NAFLD/NASH treatment</li>
+                  <li>• Weight management programs</li>
+                  <li>• Diabetes control</li>
+                  <li>• Regular liver monitoring</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-soft hover-lift transition-all">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-poppins font-semibold mb-3 text-primary">
+                  Liver Transplant Consultation
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  Expert liver transplant evaluation and consultation services. Dr. Kumaragurubaran provides 
+                  comprehensive assessment for liver transplant candidacy, pre-transplant care, and coordination 
+                  with leading transplant centers.
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Transplant evaluation</li>
+                  <li>• Pre-transplant optimization</li>
+                  <li>• Donor coordination</li>
+                  <li>• Post-transplant follow-up</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-soft hover-lift transition-all">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-poppins font-semibold mb-3 text-primary">
+                  Liver Cancer Treatment
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  Advanced treatment options for liver cancer including hepatocellular carcinoma (HCC). 
+                  Comprehensive cancer care with multidisciplinary approach, early detection protocols, 
+                  and coordination with oncology specialists.
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• HCC screening & diagnosis</li>
+                  <li>• Staging & treatment planning</li>
+                  <li>• Ablation therapy coordination</li>
+                  <li>• Palliative care support</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-soft hover-lift transition-all">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-poppins font-semibold mb-3 text-primary">
+                  Pediatric Liver Care
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  Specialized liver care for children including jaundice in newborns, pediatric hepatitis, 
+                  Wilson's disease, and other childhood liver conditions. Family-centered care with 
+                  age-appropriate treatment approaches.
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Neonatal jaundice treatment</li>
+                  <li>• Pediatric hepatitis care</li>
+                  <li>• Wilson's disease management</li>
+                  <li>• Growth & development monitoring</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Liver Cure - Detailed */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-poppins font-bold text-foreground mb-4">
+              Why Liver Cure is the Best Liver Hospital in Trichy
+            </h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
+              Liver Cure stands as the premier liver hospital in Trichy, offering world-class hepatology services 
+              with a patient-centered approach. Our commitment to excellence makes us the top choice for liver care in Tamil Nadu.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="text-2xl font-poppins font-semibold mb-6 text-primary">
+                Expert Hepatologist Dr. S. Kumaragurubaran
+              </h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                Dr. S. Kumaragurubaran brings extensive expertise in hepatology and liver transplant medicine to Trichy. 
+                With his MD, DM (Hepatology) qualifications and years of experience treating complex liver diseases, 
+                he provides personalized care for each patient. His expertise covers all aspects of liver diseases 
+                from simple fatty liver to complex liver transplant evaluations.
+              </p>
+              
+              <h3 className="text-2xl font-poppins font-semibold mb-6 text-primary">
+                Advanced Liver Treatment Facilities
+              </h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                Our hospital in Trichy is equipped with state-of-the-art diagnostic and treatment facilities for 
+                comprehensive liver care. From advanced imaging systems for accurate diagnosis to modern treatment 
+                protocols, we ensure every patient receives the highest standard of liver care available in Tamil Nadu.
+              </p>
+
+              <h3 className="text-2xl font-poppins font-semibold mb-6 text-primary">
+                Convenient Evening Consultations
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Understanding the busy schedules of our patients, Liver Cure offers convenient evening consultations 
+                from 5:30 PM to 8:30 PM, Monday through Saturday. This flexibility allows working professionals and 
+                families to access expert liver care without disrupting their daily routines. Book your appointment 
+                today by calling 95858 97676.
+              </p>
+            </div>
+
+            <div className="space-y-6">
+              <Card className="border-l-4 border-l-primary shadow-soft">
+                <CardContent className="p-6">
+                  <h4 className="font-poppins font-semibold text-lg mb-2">Comprehensive Liver Care</h4>
+                  <p className="text-muted-foreground">
+                    From routine liver function tests to complex liver transplant evaluations, we provide 
+                    complete liver care services under one roof at our Trichy hospital.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-l-4 border-l-primary shadow-soft">
+                <CardContent className="p-6">
+                  <h4 className="font-poppins font-semibold text-lg mb-2">Patient-Centered Approach</h4>
+                  <p className="text-muted-foreground">
+                    Every treatment plan is personalized based on individual patient needs, ensuring 
+                    optimal outcomes and improved quality of life for all liver disease patients.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-l-4 border-l-primary shadow-soft">
+                <CardContent className="p-6">
+                  <h4 className="font-poppins font-semibold text-lg mb-2">Latest Treatment Protocols</h4>
+                  <p className="text-muted-foreground">
+                    We follow international guidelines and latest evidence-based treatment protocols 
+                    to ensure our patients receive the most effective liver care available.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-l-4 border-l-primary shadow-soft">
+                <CardContent className="p-6">
+                  <h4 className="font-poppins font-semibold text-lg mb-2">Accessible Location in Trichy</h4>
+                  <p className="text-muted-foreground">
+                    Conveniently located in Thillainagar, Trichy, our hospital is easily accessible 
+                    from all parts of the city and surrounding areas in Tamil Nadu.
+                  </p>
+                </CardContent>
+              </Card>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Frequently Asked Questions */}
+      <section className="py-20 bg-muted">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-poppins font-bold text-foreground mb-4">
+              Frequently Asked Questions - Liver Care in Trichy
+            </h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
+              Get answers to common questions about liver diseases, treatments, and our services at 
+              the best liver hospital in Trichy. Expert answers from Dr. S. Kumaragurubaran.
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto space-y-6">
+            <Card className="border-0 shadow-soft">
+              <CardContent className="p-8">
+                <h3 className="text-xl font-poppins font-semibold mb-4 text-primary">
+                  Who is the best liver specialist in Trichy?
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Dr. S. Kumaragurubaran MD, DM (Hepatology) is the leading liver specialist in Trichy at Liver Cure hospital. 
+                  He is a consultant hepatologist and liver transplant physician with extensive experience in treating all liver diseases. 
+                  His expertise includes hepatitis treatment, cirrhosis management, fatty liver care, and liver transplant consultation.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-soft">
+              <CardContent className="p-8">
+                <h3 className="text-xl font-poppins font-semibold mb-4 text-primary">
+                  What liver diseases are treated at Liver Cure?
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Liver Cure treats all liver diseases including Hepatitis A, B, C, liver cirrhosis, fatty liver disease, 
+                  liver cancer, jaundice, autoimmune hepatitis, Wilson's disease, and provides liver transplant consultation. 
+                  We offer comprehensive liver care for both adults and children with specialized pediatric liver services.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-soft">
+              <CardContent className="p-8">
+                <h3 className="text-xl font-poppins font-semibold mb-4 text-primary">
+                  Where is Liver Cure hospital located in Trichy?
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Liver Cure is conveniently located at No. D-116, 9th Cross West, Thillainagar West, Tiruchirappalli, 
+                  Tamil Nadu 620018. We are easily accessible from all parts of Trichy and surrounding areas. 
+                  The hospital is well-connected by public transport and has ample parking facilities for patients.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-soft">
+              <CardContent className="p-8">
+                <h3 className="text-xl font-poppins font-semibold mb-4 text-primary">
+                  What are the consultation timings at Liver Cure?
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Liver Cure offers convenient evening consultations from 5:30 PM to 8:30 PM, Monday to Saturday. 
+                  This timing is designed to accommodate working professionals and families. For appointments, 
+                  call +91-95858-97676 or book online through our website. Emergency consultations are also available.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-soft">
+              <CardContent className="p-8">
+                <h3 className="text-xl font-poppins font-semibold mb-4 text-primary">
+                  Does Liver Cure provide liver transplant services?
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Yes, Liver Cure provides comprehensive liver transplant consultation and evaluation services. 
+                  Dr. Kumaragurubaran assesses patients for liver transplant candidacy, provides pre-transplant optimization, 
+                  coordinates with leading transplant centers, and offers post-transplant follow-up care. We guide patients 
+                  through the entire liver transplant process.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-soft">
+              <CardContent className="p-8">
+                <h3 className="text-xl font-poppins font-semibold mb-4 text-primary">
+                  How to book an appointment at Liver Cure?
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Booking an appointment at Liver Cure is easy. You can call us directly at +91-95858-97676, 
+                  use our online appointment booking system on this website, or visit our hospital in Thillainagar, Trichy. 
+                  We also offer WhatsApp booking for your convenience. Same-day appointments are available based on availability.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Emergency Contact Information */}
+      <section className="py-16 bg-primary">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-2xl md:text-3xl font-poppins font-bold text-primary-foreground mb-4">
+            Emergency Liver Care - Available 24/7
+          </h2>
+          <p className="text-primary-foreground/90 text-lg mb-6 max-w-2xl mx-auto">
+            For liver-related emergencies, contact Liver Cure immediately. Our expert team provides 
+            urgent liver care and emergency consultation services in Trichy.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button
+              asChild
+              size="lg"
+              className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold"
+            >
+              <a href="tel:+919585897676">Call Emergency: 95858 97676</a>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="bg-white/10 backdrop-blur-sm border-white text-white hover:bg-white hover:text-primary"
+            >
+              <a href="https://wa.me/919585897676" target="_blank" rel="noopener noreferrer">
+                WhatsApp Emergency
+              </a>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-hero">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-poppins font-bold text-primary-foreground mb-6">
+            Book Appointment - Best Liver Care Treatment
+          </h2>
+          <p className="text-primary-foreground/90 text-lg mb-8 max-w-2xl mx-auto">
+            Expert liver care team at the best hospital in Trichy. All liver diseases treated with advanced liver transplant services.
+          </p>
+          <Button
+            onClick={() => setShowAppointmentModal(true)}
+            size="lg"
+            className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold"
+          >
+            Schedule a Consultation <ChevronRight className="ml-2 h-5 w-5" />
+          </Button>
         </div>
       </section>
 
